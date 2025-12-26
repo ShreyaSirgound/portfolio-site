@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/fonts/GlacialIndifference-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/fonts/GlacialIndifference-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Angeris Pixel";
+  src: url("/fonts/AngerisPixel-Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Glacial Indifference", system-ui, -apple-system, sans-serif;
+  background-color: #f6f4f0;
+  color: #170e8c;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- BACKGROUND WRAPPER ---------- */
+.background {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.hero-background {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ---------- NAVBAR ---------- */
+header {
+  padding: 2rem 0;
+  margin-bottom: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav_links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.375rem;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  color: #170e8c;
+}
+
+.nav_links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #170e8c;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.nav_links a:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease; /* animate only on hover */
+}
+
+.nav_links a:hover {
+  opacity: 1;
+}
+
+
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+/* Name */
+.introduction {
+  font-family: "Angeris Pixel", system-ui, -apple-system, sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+/* Supporting text */
+.intro-info {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.intro-info p {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- SUBTLE FADE-IN (matches your hidden class) ---------- */
+.hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav_links {
+    gap: 1.5rem;
+  }
+}
+
+/* ---------- FLOWERS SECTION ---------- */
+.hero-illustration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* ---------- FEATURED WORKS ---------- */
+.works {
+  font-family: "Angeris Pixel", system-ui, -apple-system, sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+.works p {
+  margin-top: 3rem;
+}
+
+/* ---------- PROJECT CARDS ---------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 2.5rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center; 
+}
+
+/* Responsive: 1 column on small screens */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}
+
+.project-card {
+    position: relative;
+    background: #e3e0f8;
+    padding: 1.5rem;
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 380px;
+    min-width: 380px;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+    width: calc(100% + 3rem);
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+    background: white;
+    /*background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    opacity: 0.85;*/
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    border: 10px solid rgba(23, 14, 140, 0.4)
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+    transform: scale(1);
+}
+
+
+.project-image:hover img {
+    transform: scale(1.1);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.project-title {
+    font-family: "Glacial Indifference", system-ui, -apple-system, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #170e8c;
+}
+
+.project-impact {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #170e8c;
+    margin: 0 0 0.5rem 0;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #170e8c;
+    margin: 0;
+}
+
+.project-description em {
+    font-style: italic;
+    color: #170e8c;
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: #170e8c;
+}
+
+.project-links {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 0.3rem;
+    align-items: center;
+}
+
+.project-links a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #170e8c;
+    position: relative;
+
+    line-height: 1;       /* ensures consistent vertical spacing */
+    display: inline-flex; /* makes flex alignment easier */
+    align-items: center; 
+}
+
+.project-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.2s ease;
+}
+
+.project-links a:hover::after {
+    width: 100%;
+}
+
+.project-cta {
+    font-size: 0.85rem;
+    color: #170e8c;
+    text-decoration: none;
+    margin-top: 0.25rem;
+    display: inline-block;
+}
+
+
