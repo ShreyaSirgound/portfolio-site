@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Glacial Indifference";
-  src: url("/fonts/GlacialIndifference-Regular.otf") format("opentype");
+  src: url("fonts/GlacialIndifference-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Glacial Indifference";
-  src: url("/fonts/GlacialIndifference-Bold.otf") format("opentype");
+  src: url("fonts/GlacialIndifference-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Angeris Pixel";
-  src: url("/fonts/AngerisPixel-Regular.otf") format("opentype");
+  src: url("fonts/AngerisPixel-Regular.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
