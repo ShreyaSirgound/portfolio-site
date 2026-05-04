@@ -178,14 +178,14 @@ nav {
   }
 
   .introduction {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     padding-bottom: 1rem;
   }
 
   .intro-info {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.5;
-    width: 885vw;
+    width: 85vw;
   }
 }
 
