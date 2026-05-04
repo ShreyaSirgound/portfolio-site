@@ -2216,7 +2216,6 @@ input[type="radio"] {
     margin-top: -3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    outline: 1px solid red;
   }
 
   .cs-step {
