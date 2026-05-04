@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shreya sirgound</title>
+
+    <link rel="icon" type="image/png" href="/assets/graphics/icon.png">
+    <meta name="description" content="about - shreya sirgound">
+
+    <!-- Remixicons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- JS -->
+    <script defer src="/script.js"></script>
+</head>
+
+<body class="case-claricode">
+    <div class="background">
+        <!-- NAVBAR -->
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="/works/">works</a></li>
+                    <li><a href="/about/" class="active">about</a></li>
+                    <li><a href = "mailto:shreyasirgound@gmail.com">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- HEADER SECTION -->
+        <section class="case-study-header refined">
+        <div class="header-inner">
+            <div class="header-top">
+            <h1 class="case-study-title">Claricode</h1>
+            <p class="case-study-tagline">
+                An AI-powered learning assistant for structured code-based lessons
+            </p>
+            </div>
+
+            <div class="header-content">
+                <div class="header-media tooltip">
+                    <a href="https://claricode.netlify.app/" target="_blank" aria-label="claricode">
+                        <img
+                        src="/assets/projects/claricode/claricode-trans.png"
+                        alt="Claricode interface preview"
+                        />
+                    </a>
+                </div>
+
+                <div class="header-meta">
+
+                    <div class="meta-row top">
+                        <div class="meta-card role">
+                        <h4>Role</h4>
+                        <p>End-to-end Co-Developer + UI/UX Co-Designer</p><br>
+                        <h5>(2 person team)</h5>
+                        </div>
+
+                        <div class="meta-card tools">
+                        <h4>Tools</h4>
+                        <p>
+                            React • TypeScript • jsPDF • Google Gemini API • Vite • Tailwind CSS
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="meta-row full">
+                        <div class="meta-card highlight">
+                        <h4>Recognition</h4>
+                        <p>🏆 Best Use of Gemini API @ EmberHacks 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="meta-row bottom">
+                        <div class="meta-card timeline">
+                        <h4>Timeline</h4>
+                        <div class="spacer-xs"></div>
+                        <p>Oct. 2025 • 24 hours</p>
+                        </div>
+
+                        <div class="meta-card cta">
+                        <h4>Links</h4>
+                        <div class="meta-links">
+                            <a href="https://github.com/ShreyaSirgound/Claricode" target="_blank" aria-label="github" class="cta-link">
+                            GitHub ↗    
+                            </a>
+                            <a href="https://claricode.netlify.app/" target="_blank" aria-label="claricode">
+                            App ↗  
+                            </a>
+                            <a href="https://devpost.com/software/claricode" target="_blank" aria-label="github" class="cta-link">
+                            Devpost ↗  
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- TLDR SECTION -->
+        <section class="tldr-section">
+        <div class="tldr-container">
+            <h2 class="tldr-title">TL;DR</h2>
+
+            <div class="tldr-core">
+            <div class="tldr-row">
+                <span class="tldr-label">Problem</span>
+                <p>
+                Understanding fast-paced, code-heavy lectures with fragmented slides,
+                code files, and notes leads to an unproductive learning experience
+                for many students.
+                </p>
+            </div>
+
+            <div class="tldr-row">
+                <span class="tldr-label">Solution</span>
+                <p>
+                Claricode is an AI-powered web app that transforms messy, unstructured
+                code files and lecture materials into structured, editable lessons
+                with definitions, examples, code snippets, and visuals.
+                </p>
+            </div>
+            </div>
+
+            <div class="tldr-grid">
+            <div class="tldr-block">
+                <h4 class="tldr-label">Key Features</h4>
+                <ul class="tldr-list two-col">
+                <li>Structured lessons</li>
+                <li>Integrated note-taking</li>
+                <li>Interactive chatbot</li>
+                <li>PDF exports</li>
+                <li>Text-to-speech</li>
+                <li>Accessibility themes</li>
+                </ul>
+            </div>
+
+            <div class="tldr-block tldr-muted">
+                <h4 class="tldr-label">Next Steps</h4>
+                <ul class="tldr-list arrows">
+                <li>Richer diagram generation</li>
+                <li>Saved lessons via user accounts</li>
+                <li>Student usability testing</li>
+                <li>Multilingual text-to-speech</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!---- CASE STUDY QUICK NAV -->
+        <div class="process-nav-header">
+            <p>Process</p>
+        </div>
+
+        <nav class="cs-progress" id="cs-progress">
+        <ul class="cs-progress-track">
+
+            <li class="cs-step active" data-target="cs-context">
+            <span class="cs-circle">1</span>
+            <span class="cs-label">Context</span>
+            </li>
+
+            <li class="cs-line"></li>
+
+            <li class="cs-step" data-target="cs-planning-design">
+            <span class="cs-circle">2</span>
+            <span class="cs-label">Planning + Design</span>
+            </li>
+
+            <li class="cs-line"></li>
+
+            <li class="cs-step" data-target="cs-technical-design">
+            <span class="cs-circle">3</span>
+            <span class="cs-label">Technical Design</span>
+            </li>
+
+            <li class="cs-line"></li>
+
+            <li class="cs-step" data-target="cs-challenges">
+            <span class="cs-circle">4</span>
+            <span class="cs-label">Challenges</span>
+            </li>
+
+            <li class="cs-line"></li>
+
+            <li class="cs-step" data-target="cs-reflection">
+            <span class="cs-circle">5</span>
+            <span class="cs-label">Reflection + Next Steps</span>
+            </li>
+
+        </ul>
+        </nav>
+
+        <!---- CASE STUDY CONTENT -->
+        <div class="cs-whole">
+        <section id="cs-context" class="cs-section staggered">
+        <div class="cs-inner-left">
+            <div class="cs-content label">
+                <h2>Context</h2>
+                <h4>i. the problem</h4>
+            </div>
+
+            <div class="cs-content text">
+                <div class="spacer"></div>
+                <p>
+                At EmberHacks 2025, we were asked to create an innovative solution to make learning fun,
+                accessible, and engaging for all. My partner and I took the time to brainstorm real pain points
+                that are occuring within the education industry, taking into consideration our own experiences.
+                Through this we settled on building a solution for an issue we had both been facing throughout the semester:
+                </p>
+                <p class="cs-quote">Computer science lectures often move quickly and rely on a mix of slides, live 
+                coding, PDFs, and handwritten notes. Important concepts end up fragmented across 
+                multiple sources, forcing students to constantly switch contexts instead of focusing 
+                on understanding within their learning process. </p>
+                <p>
+                As students ourselves, we experienced how this fragmentation made it difficult to revisit 
+                material effectively, especially when preparing for exams within tight deadlines, or trying to clarify gaps in 
+                understanding after lectures.
+                </p>
+            </div>
+
+        </div>
+        </section>
+
+        <section class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content text">
+                <p>
+                Claricode is an AI-powered web application that transforms unstructured lecture 
+                materials and code files into structured, editable lessons. Each lesson combines 
+                clear definitions, annotated code snippets, examples, and visual explanations, 
+                with an embedded AI assistant to support contextual questions as students learn.
+
+                Rather than replacing lectures, Claricode is designed to complement existing 
+                coursework by organizing content into a format that supports deeper comprehension 
+                and efficient review.
+                </p>
+            </div>
+
+            <div class="cs-content label">
+                <h4>ii. the product</h4>
+            </div>
+
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content text">
+                <div class="spacer"></div>
+                <p>
+                After identifying fragmentation as the core issue in computer science lectures, 
+                we prioritized features that reduced context switching and supported active review 
+                rather than passive note storage. Design decisions were guided by how students 
+                actually move through lecture material—switching between concepts, examples, and 
+                explanations under time pressure. Early sketches and low-fidelity prototypes helped 
+                us test flows quickly, refine feature scope, and align on a simple, intuitive 
+                interface before moving into technical implementation.
+                </p>
+            </div>
+
+            <div class="cs-content label">
+                <h2>Planning +</h2>
+                <h2 class="label-right">Design</h2>
+            </div>
+
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content label">
+                <h4>i. feature ideation</h4>
+                <div class="visual">
+                    <img src="/assets/projects/claricode/chart.svg" alt="survey chart" class="graph">
+                </div>
+            </div>
+
+            <div class="cs-content text">
+                <p>
+                We conducted a sample survey through student participants to identify pain points in how 
+                students currently study from code-heavy lectures. Our results showed strong patterns in 
+                recurring challenges such as context switching, limited interactivity, and insufficient 
+                visual support, highlighting gaps in how code-heavy material is currently delivered and reviewed.<br><br>
+                
+                From this, we prioritized features 
+                that would reduce cognitive load, preserve context, and support different learning 
+                styles, while remaining feasible within a 24-hour hackathon timeframe.
+                </p>
+            </div>
+
+        </div>
+        </section>
+
+        <div class="features-background">
+        <section class="cs-section staggered" id="cs-planning-design">
+        <div class="cs-inner-right">
+            <div class="cs-content label">
+                <h4 class="subtitle">feature 1 • structured lessons</h4>
+                <p>
+                Students often rewrite lecture notes into structured summaries when studying. 
+                We mirrored this behavior by designing a consistent lesson format that includes 
+                definitions, examples, edge cases, and code snippets—all generated through the user inputted 
+                content from actual lectures.
+
+                This structure helps students quickly identify key ideas, connect separated concepts, and 
+                reduces the effort required to reconstruct meaning from scattered materials.
+                </p>
+            </div>
+
+            <div class="cs-content text">
+                <video class="lazy-video" muted loop playsinline preload="metadata">
+                    <source data-src="/assets/projects/claricode/f1.mp4" alt="Embedded AI assistant" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-left">
+            <div class="cs-content text">
+                <video class="lazy-video" muted loop playsinline preload="metadata">
+                    <source data-src="/assets/projects/claricode/feature2.mp4" alt="Embedded AI assistant" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="cs-content label">
+                <h4 class="subtitle">feature 2 • embedded ai assistant</h4>
+                <p>
+                Instead of placing the chatbot in a separate interface, we embedded it directly 
+                alongside lesson content. This allowed students to ask questions without losing 
+                their place, keeping learning contextual and uninterrupted.
+
+                The assistant adapts explanations to the lesson content, supporting both high-level 
+                understanding and specific code-related questions.
+                </p>
+            </div>
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content label">
+                <h4 class="subtitle">feature 3 • integrated note-taking</h4>
+                <p>
+                We included inline highlighting and note-taking to allow students to personalize 
+                generated lessons and actively engage with the material as it is presented. By embedding 
+                these interactions inline rather than in a separate workspace, we reduce 
+                context switching and support deeper cognitive processing during learning. This approach 
+                reinforces active learning and gives users greater control over how content evolves over 
+                time, transforming generated lessons into personalized study resources that reflect each 
+                student’s priorities and learning process.
+                </p>
+            </div>
+
+            <div class="cs-content text">
+                <video class="lazy-video" muted loop playsinline preload="metadata">
+                    <source data-src="/assets/projects/claricode/feature3.mp4" alt="Integrated note taking" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-left">
+            <div class="cs-content text">
+                <video class="lazy-video" muted loop playsinline preload="metadata">
+                    <source data-src="/assets/projects/claricode/feature4.mp4" alt="Text-to-speech" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="cs-content label">
+                <h4 class="subtitle">feature 4 • text-to-speech</h4>
+                <p>
+                Text-to-speech was incorporated to make generated lessons more accessible and adaptable 
+                to different learning contexts. By allowing students to listen to lesson content rather 
+                than relying solely on reading, this feature supports learners who benefit from auditory 
+                reinforcement as well as those studying in hands-free or low-attention environments. 
+                During planning, we focused on keeping the interaction lightweight and non-disruptive, 
+                ensuring that audio playback could be started, paused, or revisited without breaking 
+                the learning flow. By integrating audio directly into the lesson experience, we aimed to 
+                support diverse learning preferences while maintaining a cohesive and focused study workflow.
+                </p>
+            </div>
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content label">
+                <h4 class="subtitle">feature 5 • pdf export support</h4>
+                <p>
+                As students interact with lessons through highlighting, annotations, and notes, 
+                exporting this content as a consolidated PDF allows them to preserve their 
+                personalized material in a portable, offline-friendly format. During planning, 
+                we focused on ensuring that exported documents reflected the structure and emphasis 
+                created during study, maintaining visual hierarchy so that highlighted concepts and 
+                annotations remained meaningful outside the app. By enabling PDF export, 
+                we ensured that learning artifacts remained useful across contexts, reinforcing 
+                continuity and long-term retention.
+                </p>
+            </div>
+
+            <div class="cs-content text">
+                <div class="feature-scroll">
+                    <img src="/assets/projects/claricode/feature5.png" alt="PDF export">
+                </div>
+            </div>
+        </div>
+        </section>
+        </div>
+
+        <section id="cs-planning-design" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content text">
+                <p>
+                Our UI design focused on clarity and minimal friction. We prioritized a 
+                side-by-side layout that keeps lesson content and the AI assistant visible 
+                at all times, reducing context switching.
+
+                Low-fidelity wireframes helped us validate layout and information hierarchy 
+                early, after which we refined spacing, typography, and visual hierarchy directly 
+                through test prototypes and code.
+                </p>
+            </div>
+
+            <div class="cs-content label">
+                <h4>ii. ui/ux prototyping</h4>
+            </div>
+        </div>
+        </section>
+
+        <section id="cs-planning-design" class="centered">
+            <div>
+                <img src="/assets/projects/claricode/ui mockup.png" alt="ui/ux mockups">
+            </div>
+        </section>
+
+        <section id="cs-technical-design" class="cs-section staggered">
+        <div class="cs-inner-left">
+            <div class="cs-content label">
+                <h2>Technical Design</h2>
+                <h4>i. implementation</h4>
+            </div>
+
+            <div class="cs-content text">
+                <div class="spacer"></div>
+                <p>
+                Claricode was built using React and TypeScript, with Vite enabling fast iteration 
+                and Tailwind CSS ensuring consistent, reusable styling across the interface. 
+                Lesson generation and the contextual AI assistant were powered by the Google 
+                Gemini API, with responses structured to support inline highlighting and note 
+                persistence. Client-side state was managed to keep interactions responsive while 
+                minimizing unnecessary re-renders during editing workflows. For portability, 
+                jsPDF was used to export personalized lessons into structured, readable documents. 
+                The overall architecture was intentionally lightweight to balance performance and 
+                flexibility within hackathon constraints.
+                </p>
+            </div>
+
+        </div>
+        </section>
+
+        <section class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content text"></div>
+            <div class="cs-content label">
+                <h4>ii. highlighted decisions</h4>
+            </div>
+        </div>
+        </section>
+
+        <section class="cs-section single">
+            <div class="cs-content text">
+                <div class="highlight-grid">
+
+                    <div class="highlight-item">
+                        <i class="ri-settings-5-fill"></i>
+                        <h5>Design–development iteration</h5>
+                        <p>
+                            Many UI decisions were refined directly in code to validate responsiveness,
+                            accessibility, and real interaction states.
+                        </p>
+                    </div>
+
+                    <div class="highlight-item">
+                        <i class="ri-layout-2-fill"></i>
+                        <h5>Component-based structure</h5>
+                        <p>
+                            Lessons and chatbot interactions were built as reusable components to keep
+                            the codebase maintainable as features evolved.
+                        </p>
+                    </div>
+
+                    <div class="highlight-item">
+                        <i class="ri-file-text-fill"></i>
+                        <h5>Client-side PDF generation</h5>
+                        <p>
+                            Client-side exports were chosen to avoid backend complexity while still
+                            delivering meaningful user value.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="cs-challenges" class="cs-section staggered">
+        <div class="cs-inner-right">
+            <div class="cs-content text">
+                <div class="spacer"></div>
+                <p>
+                One major challenge was balancing feature scope with time constraints. With only 24 hours, 
+                we had to prioritize core learning flows over long-term scalability.
+
+                Another challenge was designing AI outputs that felt structured and reliable. Prompt 
+                iteration and testing were essential to ensure the lesson content remained clear and 
+                pedagogically useful.
+                </p>
+            </div>
+
+            <div class="cs-content label">
+                <h2 class="label-right">Challenges</h2>
+            </div>
+
+        </div>
+        </section>
+
+        <section id="cs-reflection" class="cs-section staggered">
+        <div class="cs-inner-left">
+            <div class="cs-content label">
+                <h2>Reflection +</h2>
+                <h2 class="label-right">Next Steps</h2>
+            </div>
+
+            <div class="cs-content text">
+                <div class="spacer"></div>
+                <p>
+                Claricode reinforced the importance of designing AI-driven tools around real user 
+                workflows rather than novelty. Tight collaboration between design and development 
+                allowed us to move quickly while maintaining coherence across the product.
+
+                With more time, we would focus on richer diagram generation, persistent user accounts 
+                for saved lessons, structured usability testing with students, and expanded multilingual 
+                text-to-speech support to further improve accessibility and learning outcomes.
+                </p>
+            </div>
+        </div>
+        </section>
+        </div>
+
+        <section>
+            <nav>
+                <ul class = "case-carousel">
+                    <li><a href = "/garden-of-evo/">
+                        <i class="ri-arrow-left-circle-fill"></i>
+                        prev : garden of evo
+                    </a></li>
+                    <li><a href = "/schoolsync/">
+                        next : schoolsync
+                        <i class="ri-arrow-right-circle-fill"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!---- FOOTER SECTION -->
+        <footer class="pixel-footer">
+        <div class="footer-content">
+            <div class="footer-cta">
+                <p class="footer-cta-main">let's build something meaningful together</p>
+                <p class="footer-cta-secondary">feel free to connect — in whatever way feels right!</p>
+            </div>
+            <div class="footer-flowers">
+                <a href="https://github.com/ShreyaSirgound" target="_blank">
+                    <div class="flower">
+                        <video class="lazy-video" muted loop playsinline preload="auto">
+                            <source data-src="/assets/graphics/f1.webm" type="video/mp4">
+                        </video>
+                        <div class="flower-label">explore github</div>
+                    </div>
+                </a>
+                <div class="flower">
+                    <video class="lazy-video flip" muted loop playsinline preload="auto">
+                        <source data-src="/assets/graphics/f2.webm" type="video/mp4">
+                    </video>
+                </div>
+                <a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank">
+                    <div class="flower">
+                        <video class="lazy-video" muted loop playsinline preload="auto">
+                            <source data-src="/assets/graphics/f3.webm" type="video/mp4">
+                        </video>
+                        <div class="flower-label">connect on linkedin</div>
+                    </div>
+                </a>
+                <div class="flower">
+                    <video class="lazy-video flip" muted loop playsinline preload="auto">
+                        <source data-src="/assets/graphics/f4.webm" type="video/mp4">
+                    </video>
+                </div>
+                <a href="mailto:shreyasirgound@gmail.com" target="_blank">
+                    <div class="flower">
+                        <video class="lazy-video" muted loop playsinline preload="auto">
+                            <source data-src="/assets/graphics/f5.webm" type="video/mp4">
+                        </video>
+                        <div class="flower-label">email me</div>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-meta">
+                   <p>designed and built by shreya sirgound © 2026</p>
+            </div>
+        </div>
+        <!--<div class="sparkles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><p>₊˚˖°.</p></span>
+            <span><i class="ri-shining-fill"></i></span>
+            <span><i class="ri-shining-fill"></i></span>
+            <span><i class="ri-shining-fill"></i></span>
+            <span><i class="ri-shining-fill"></i></span>
+            <span><i class="ri-shining-fill"></i></span>
+        </div>-->
+        </footer>
+    </div>
+</body>
+</html>
