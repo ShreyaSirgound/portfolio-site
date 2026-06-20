@@ -1,3 +1,24 @@
+/* SET DATE */
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+/* SCROLL EFFECTS */
+document.addEventListener("DOMContentLoaded", () => {
+    const hiddenEls = document.querySelectorAll('.hidden');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+    threshold: 0.1
+    });
+
+    hiddenEls.forEach(el => revealObserver.observe(el));
+});
+
 /* VIDEO AND IMAGE HANDLING */
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -282,3 +303,63 @@ if (featureScroll && featureSection) {
 
     observer.observe(featureSection);
 }
+
+/* TEXT EFFECTS */
+document.querySelectorAll('.reveal-text').forEach(el => {
+  const words = el.textContent.trim().split(/\s+/);
+  el.innerHTML = words
+    .map((w, i) => `<span style="animation-delay:${i * 0.1}s">${w}</span>`)
+    .join(' ');
+});
+
+document.querySelectorAll('.reveal-letters').forEach(el => {
+  const text = el.textContent.trim();
+  const words = text.split(' ');
+  let i = 0;
+
+  el.innerHTML = words.map(word => {
+    const letters = word.split('').map(ch => {
+      const span = `<span class="letter" style="animation-delay:${i * 0.06}s">${ch}</span>`;
+      i++;
+      return span;
+    }).join('');
+    return `<span class="word">${letters}</span>`;
+  }).join(' ');
+});
+
+document.querySelectorAll('.breeze-text').forEach(el => {
+  el.innerHTML = el.textContent.trim().split('').map((ch, i) =>
+    ch === ' '
+      ? ' '
+      : `<span class="breeze-letter" style="animation-delay:${i * 0.08}s">${ch}</span>`
+  ).join('');
+});
+
+/* CURSOR LABEL */
+const cursorLabel = document.getElementById('cursorLabel');
+let mouseX = 0, mouseY = 0;
+let curX = 0, curY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function followLoop() {
+  curX += (mouseX - curX) * 0.2; // 0.2 = how "laggy"/springy the follow feels
+  curY += (mouseY - curY) * 0.2;
+  cursorLabel.style.left = `${curX}px`;
+  cursorLabel.style.top = `${curY}px`;
+  requestAnimationFrame(followLoop);
+}
+followLoop();
+
+document.querySelectorAll('[data-cursor-text]').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorLabel.textContent = el.dataset.cursorText;
+    cursorLabel.classList.add('visible');
+  });
+  el.addEventListener('mouseleave', () => {
+    cursorLabel.classList.remove('visible');
+  });
+});

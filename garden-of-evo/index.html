@@ -38,17 +38,17 @@
 
             <!-- Title + Tagline -->
             <div class="header-top">
-            <h1 class="case-study-title">Garden of Evo</h1>
-            <p class="case-study-tagline">
+            <h1 class="case-study-title reveal-letters">Garden of Evo</h1>
+            <p class="case-study-tagline hidden fade-in">
                 A single-player, web-based explorer game  where you find gifts
             </p>
             </div>
 
             <!-- Main Content -->
-            <div class="header-content">
+            <div class="header-content hidden fade-in">
 
                 <!-- Product Image -->
-                <div class="header-media tooltip">
+                <div class="header-media tooltip" data-cursor-text="view project ↗">
                     <a href="https://shreyasirgound.github.io/Garden-of-Evo/" target="_blank" aria-label="garden of evo">
                         <img
                         src="../assets/projects/garden-of-evo/garden-of-evo-trans.png"
@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- Metadata Grid -->
-                <div class="header-meta">
+                <div class="header-meta hidden fade-right">
 
                     <div class="meta-row top">
                         <div class="meta-card role">
@@ -418,84 +418,45 @@
         <!---- FOOTER SECTION -->
         <footer class="pixel-footer">
         <div class="footer-content">
-            <div class="footer-cta">
+            <div class="footer-cta hidden fade-up">
                 <p class="footer-cta-main">let's build something meaningful together</p>
                 <p class="footer-cta-secondary">feel free to connect — in whatever way feels right!</p>
             </div>
             <div class="footer-flowers">
                 <a href="https://github.com/ShreyaSirgound" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
+                        <img class="flower-clockwise" src="../assets/graphics/f1.png">
+                        <!--<video class="lazy-video" muted loop playsinline preload="auto">
                             <source data-src="../assets/graphics/f1.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">explore github</div>
+                        </video>-->
+                        <div class="flower-label"><p>explore my github ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="../assets/graphics/f2.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f2.png">
                 </div>
                 <a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="../assets/graphics/f3.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">connect on linkedin</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f3.png">
+                        <div class="flower-label"><p>connect on linkedin ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="../assets/graphics/f4.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f4.png">
                 </div>
                 <a href="mailto:shreyasirgound@gmail.com" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="../assets/graphics/f5.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">email me</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f5.png">
+                        <div class="flower-label"><p>email me ↗</p></div>
                     </div>
                 </a>
             </div>
             <div class="footer-meta">
-                   <p>designed and built by shreya sirgound © 2026</p>
+                   <p>designed and built by shreya sirgound © <span id="copyright-year"></span></p>
             </div>
         </div>
-        <!--<div class="sparkles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-        </div>-->
         </footer>
     </div>
+    <div class="cursor-label" id="cursorLabel"></div>
 </body>
 </html>

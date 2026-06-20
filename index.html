@@ -37,16 +37,14 @@
                 <div class = "introduction">
                     Shreya Sirgound
                 </div>
-                <section class="hidden">
-                    <div class = "intro-info">
-                        <p>
-                            full-stack developer + studying cs @ university of toronto
-                        </p>
-                        <p>
-                            seeking fall 2026 internships!
-                        </p>
-                    </div>
-                </section>
+                <div class = "intro-info hidden fade-up">
+                    <p>
+                        full-stack developer + studying cs @ university of toronto
+                    </p>
+                    <p>
+                        seeking fall 2026 internships!
+                    </p>
+                </div>
             </div>
 
             <!-- FLOWERS -->
@@ -56,14 +54,12 @@
         </div>
 
         <!--WORKS-->
-        <section class="hidden">
-        <div class = "works">
+        <div class = "works hidden fade-up">
             <p>featured works</p>
         </div>
-        </section>
 
         <section class="projects-grid">
-            <div class="project-card">
+            <div class="project-card hidden fade-up">
                 <div class="project-image">
                     <img src="assets/projects/claricode-cover.png" alt="claricode home page" />
                 </div>
@@ -82,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card hidden fade-up">
                 <div class="project-image">
                     <img src="assets/projects/schoolsync-cover.png" alt="schoolsync home page" />
                 </div>
@@ -136,7 +132,7 @@
                 </div>
             </div>
         -->
-            <div class="project-card">
+            <div class="project-card hidden fade-up">
                 <div class="project-image">
                     <img src="assets/projects/garden-of-evo-cover.png" alt="garden of evo game screen" />
                 </div>
@@ -155,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card hidden fade-up">
                 <div class="project-image">
                     <img src="assets/projects/quad-compressor-cover.png" alt="compressor/decompressor mockup" />
                 </div>
@@ -178,48 +174,41 @@
         <!---- FOOTER SECTION -->
         <footer class="pixel-footer">
         <div class="footer-content">
-            <div class="footer-cta">
+            <div class="footer-cta hidden fade-up">
                 <p class="footer-cta-main">let's build something meaningful together</p>
                 <p class="footer-cta-secondary">feel free to connect — in whatever way feels right!</p>
             </div>
             <div class="footer-flowers">
                 <a href="https://github.com/ShreyaSirgound" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="assets/graphics/f1.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">explore github</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f1.png">
+                        <!--<video class="lazy-video" muted loop playsinline preload="auto">
+                            <source data-src="../assets/graphics/f1.webm" type="video/mp4">
+                        </video>-->
+                        <div class="flower-label"><p>explore my github ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="assets/graphics/f2.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f2.png">
                 </div>
                 <a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="assets/graphics/f3.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">connect on linkedin</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f3.png">
+                        <div class="flower-label"><p>connect on linkedin ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="assets/graphics/f4.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f4.png">
                 </div>
                 <a href="mailto:shreyasirgound@gmail.com" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="assets/graphics/f5.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">email me</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f5.png">
+                        <div class="flower-label"><p>email me ↗</p></div>
                     </div>
                 </a>
             </div>
             <div class="footer-meta">
-                   <p>designed and built by shreya sirgound © 2026</p>
+                   <p>designed and built by shreya sirgound © <span id="copyright-year"></span></p>
             </div>
         </div>
         <!--<div class="sparkles">

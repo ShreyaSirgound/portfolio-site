@@ -37,20 +37,20 @@
 
             <!-- TEXT -->
             <div class="about-text">
-            <h1>hey there, it's shreya</h1>
-            <p>
+            <h1 class="reveal-text">hey there, it's shreya</h1>
+            <p class="hidden fade-up">
             i’m a full-stack developer, designer, and tinkerer studying 
             computer science + math @ university of toronto! i thrive on turning 
             complex challenges into elegant solutions, and my work is influenced as much by my design 
             and creativity as it is my logic and strategy.
             </p>
-            <p>
+            <p class="hidden fade-up">
             when i'm not building you'll probably find me binging sci-fi thrillers, finding new music, 
             or immersed in a magic-filled book many worlds away! i also enjoy baking treats to fuel
             long nights, taking bike rides to spark ideas, or sketching little designs that might 
             one day inspire my next project!
             </p>
-            <div class="about-meta">
+            <div class="about-meta hidden fade-up">
                 <p>
                 find my corners of the internet here:
                 </p>
@@ -75,18 +75,19 @@
             </div>
 
             <!-- IMAGE -->
-            <div class="about-image">
+            <div class="about-image hidden fade-in">
                 <img src="../assets/graphics/shreya.png" alt="a picture of me!" />
             </div>
             </section>
 
             <!-- PROCESS -->
             <div class="process-section">
-                <div class="process-title">
+                <div class="process-title hidden fade-up">
                     <h1>a look into my build process</h1>
                 </div>
 
-                <div class="process" id="process">
+                <div class="process-flower">
+                <div class="process hidden fade-up" id="process">
                     <div class="center-dot"></div>
                     <div class="process-card">
                         <img src="../assets/graphics/petals.png" alt="Gather" />
@@ -143,11 +144,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
 
 
             <!-- FAVOURITES -->
-             <div class="favs-section">
+             <div class="favs-section hidden fade-up">
                 <h1>some of my favourite stories</h1>        
                 <div class="carousel-scene">
                     <div class="carousel" id="carousel">
@@ -168,83 +170,43 @@
         <!-- FOOTER -->
         <footer class="pixel-footer">
         <div class="footer-content">
-            <div class="footer-cta">
+            <div class="footer-cta hidden fade-up">
                 <p class="footer-cta-main">let's build something meaningful together</p>
                 <p class="footer-cta-secondary">feel free to connect — in whatever way feels right!</p>
             </div>
             <div class="footer-flowers">
                 <a href="https://github.com/ShreyaSirgound" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
+                        <img class="flower-clockwise" src="../assets/graphics/f1.png">
+                        <!--<video class="lazy-video" muted loop playsinline preload="auto">
                             <source data-src="../assets/graphics/f1.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">explore github</div>
+                        </video>-->
+                        <div class="flower-label"><p>explore my github ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="../assets/graphics/f2.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f2.png">
                 </div>
                 <a href="https://www.linkedin.com/in/shreyasirgound/" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="../assets/graphics/f3.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">connect on linkedin</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f3.png">
+                        <div class="flower-label"><p>connect on linkedin ↗</p></div>
                     </div>
                 </a>
                 <div class="flower">
-                    <video class="lazy-video flip" muted loop playsinline preload="auto">
-                        <source data-src="../assets/graphics/f4.webm" type="video/mp4">
-                    </video>
+                    <img class="flower-counterclockwise" src="../assets/graphics/f4.png">
                 </div>
                 <a href="mailto:shreyasirgound@gmail.com" target="_blank">
                     <div class="flower">
-                        <video class="lazy-video" muted loop playsinline preload="auto">
-                            <source data-src="../assets/graphics/f5.webm" type="video/mp4">
-                        </video>
-                        <div class="flower-label">email me</div>
+                        <img class="flower-clockwise" src="../assets/graphics/f5.png">
+                        <div class="flower-label"><p>email me ↗</p></div>
                     </div>
                 </a>
             </div>
             <div class="footer-meta">
-                   <p>designed and built by shreya sirgound © 2026</p>
+                   <p>designed and built by shreya sirgound © <span id="copyright-year"></span></p>
             </div>
         </div>
-        <!--<div class="sparkles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><p>₊˚˖°.</p></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-            <span><i class="ri-shining-fill"></i></span>
-        </div>-->
         </footer>
     </div>
     <!--JS-->
