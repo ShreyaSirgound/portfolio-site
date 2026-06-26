@@ -175,6 +175,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+/* ABOUT PROJECT CARDS */
+const stack = document.querySelector(".card-stack");
+let cards = [...document.querySelectorAll(".about-project-card")];
+
+const mobilePositions = [
+  { left: 0, top: 35, rotate: -6 },
+  { left: 18, top: 12, rotate: 3 },
+  { left: 8, top: 55, rotate: -2 },
+  { left: 26, top: 30, rotate: 5 }
+];
+
+function updateMobileStack() {
+  if (window.innerWidth > 768) {
+    cards.forEach(card => {
+      card.style.left = "";
+      card.style.top = "";
+      card.style.transform = "";
+      card.style.zIndex = "";
+      card.style.pointerEvents = "";
+    });
+    return;
+  }
+
+  cards.forEach((card, index) => {
+    const pos = mobilePositions[index % mobilePositions.length];
+
+    card.style.left = `${pos.left}px`;
+    card.style.top = `${pos.top}px`;
+    card.style.transform = `rotate(${pos.rotate}deg)`;
+    card.style.zIndex = cards.length - index;
+    card.style.pointerEvents = index === 0 ? "auto" : "none";
+  });
+}
+
+updateMobileStack();
+
+stack.addEventListener("click", () => {
+  if (window.innerWidth > 768) return;
+
+  const first = cards.shift();
+  cards.push(first);
+
+  updateMobileStack();
+});
+
 /* CS QUICK NAV BAR */
 document.addEventListener("DOMContentLoaded", () => {
     const steps = document.querySelectorAll(".cs-step");

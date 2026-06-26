@@ -1214,8 +1214,8 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  top: -200px;
-  margin-bottom: -25px;
+  height: 250px;
+  margin-bottom: 0px;
   background: linear-gradient(
       to top,
       #fbf8f3 30%,
@@ -1284,10 +1284,155 @@ nav {
   .carousel-scene::after {
     margin-left: -20rem;
     margin-right: -20rem;
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
     top: -220px;
   }
 
+}
+
+/* ABOUT PROJECTS */
+.about-projects-section {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  margin-top: -4rem;
+  background-color: #fbf8f3;
+  opacity: 1;
+}
+
+.about-projects-section h1 {
+  font-family: "Angeris Pixel", system-ui, -apple-system, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+.card-stack-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card-stack {
+  position: relative;
+  height: 350px;
+  width: 1000px;
+  margin-top: 3rem;
+}
+
+.about-project-card {
+  position: absolute;
+  width: 305px;
+  height: 215px;
+  background: #d8d3cb;
+  border: 2px dashed #a5a198;
+  border-radius: 18px;
+  padding: 0.6rem;
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow 0.4s ease;
+}
+
+.about-project-card:nth-child(1) { left: 5%;   top: 30px; transform: rotate(-3deg); z-index: 4; }
+.about-project-card:nth-child(2) { left: 27%;  top: 77px; transform: rotate(2deg); z-index: 1; }
+.about-project-card:nth-child(3) { left: 49%;  top: 40px; transform: rotate(5deg);  z-index: 2; }
+.about-project-card:nth-child(4) { left: 68%;  top: 50px; transform: rotate(-6deg);  z-index: 3; }
+
+.about-project-card:hover {
+  transform: rotate(0deg) translateY(-20px) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16);
+  z-index: 20 !important;
+}
+
+.about-project-card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid whitesmoke;
+  overflow: hidden;
+  background: #d6d2ca;
+  position: relative;
+}
+
+.about-project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-project-card-content {
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.7rem;
+  position: absolute;
+  overflow: hidden;
+  background: transparent;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px) saturate(200%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.4);
+}
+
+.about-project-card-content.light{
+  color: whitesmoke;
+}
+
+.about-project-card-title {
+  font-size: 0.9rem;
+  margin: 0 0 0.2rem;
+}
+
+.about-project-card-desc {
+  font-size: 0.65rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-projects-section {
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about-projects-section h1{
+    font-size: 1.8rem;
+  }
+
+  .card-stack-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card-stack {
+    position: relative;
+    width: 305px;
+    height: 260px;
+    margin: 2rem auto;
+  }
+
+  .about-project-card {
+    width: 305px;
+    height: 215px;
+
+    transition:
+      left 0.45s ease,
+      top 0.45s ease,
+      transform 0.45s cubic-bezier(0.23, 1, 0.32, 1),
+      box-shadow 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-project-card { transition: none; }
 }
 
 /* ---------- CASE STUDIES SECTION ---------- */
